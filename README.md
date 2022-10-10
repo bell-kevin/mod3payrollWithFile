@@ -35,7 +35,7 @@ Here is an example with good input:
 
 This is the file that was written in that execution:
 
-File written in program   
+![File written in program](https://github.com/bell-kevin/mod3payrollWithFile/blob/main/mod3txt.PNG)
 
 Here is an example of the program with invalid data entered for number of hours worked for the first 2 employees, and 0 for the third employee:
 
