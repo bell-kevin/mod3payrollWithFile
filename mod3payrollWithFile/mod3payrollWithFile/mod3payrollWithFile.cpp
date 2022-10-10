@@ -47,18 +47,12 @@ int main()
 	inputFile.close();
 	system("pause");
 	return 0;
-	//input validation loop
-	//if statements
-	//functions
-	//getHours
-	//NoOverTime
-	//getGrossPayCalculation
 } // end main
 
 double getHours(double hoursWorked) {
 	cout << "Enter the number of hours worked: ";
 	cin >> hoursWorked;
-	while (hoursWorked < 0 || hoursWorked > 40) {
+	while (hoursWorked < 0 || hoursWorked > 40) { //No OverTime
 		cout << "Invalid number of hours. Please enter a number between 0 and 40: ";
 		cin >> hoursWorked;
 	}
