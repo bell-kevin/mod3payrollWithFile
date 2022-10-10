@@ -9,7 +9,7 @@ double hourlyPayRate, hoursWorked, grossPay;
 string continueProgram="y";
 int counter;
 double getHours(double hoursWorked);
-double getGrossPay(double hourlyPayRate, double hoursWorked);
+double getGrossPay(double hourlyPayRate, double hoursWorked, double &grossPay);
 int main()
 {
 	ofstream outputFile;
@@ -27,10 +27,10 @@ int main()
 		cout << "Continue with the program? (Y/N)";
 		cin >> continueProgram;
 	} // end while
-	outputFile.close();
+	outputFile.close();	//write file output
 	cout << "Done writing to file" << endl;
 	cout << "Reading data from file" << endl;
-	ifstream inputFile;
+	ifstream inputFile; 	//read file input
 	inputFile.open("payroll.txt");
 	for (int count = 1; count <= counter; count++) {
 		inputFile >> firstName;
@@ -43,9 +43,6 @@ int main()
 	inputFile.close();
 	system("pause");
 	return 0;
-	//write file output
-	//read file input
-	//while loop
 	//input validation loop
 	//if statements
 	//functions
@@ -62,17 +59,7 @@ double getHours(double hoursWorked) {
 	return hoursWorked;
 }
 
-double getGrossPay(double hourlyPayRate, double hoursWorked) {
-		grossPay = hoursWorked * hourlyPayRate;
+double getGrossPay(double hourlyPayRate, double hoursWorked, double& totalPayroll) {
+	grossPay = hoursWorked * hourlyPayRate;
+	return grossPay;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
