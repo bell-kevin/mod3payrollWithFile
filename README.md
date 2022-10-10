@@ -31,7 +31,7 @@ Run the program two times, once with all valid input, once with some invalid inp
 
 Here is an example with good input:
 
-M3 Competency good 
+![1](https://github.com/bell-kevin/mod3payrollWithFile/blob/main/mod3.PNG)
 
 This is the file that was written in that execution:
 
