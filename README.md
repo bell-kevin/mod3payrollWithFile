@@ -39,7 +39,7 @@ File written in program
 
 Here is an example of the program with invalid data entered for number of hours worked for the first 2 employees, and 0 for the third employee:
 
- M3 Competency bad  
+ ![M3 Competency bad](https://github.com/bell-kevin/mod3payrollWithFile/blob/main/mod3bad.PNG)
 
 Create a table of test cases BEFORE coding the project. Create at least 4 test cases which specify the information used and calculated in this project. You cannot use the same data shown in the images here. Be sure to use your test cases when you run the project to verify that it produces correct results.
 
