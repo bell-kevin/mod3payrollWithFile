@@ -5,14 +5,15 @@
 #include <iomanip>
 #include <fstream>
 using namespace std;
-string firstName, lastName;
-double hourlyPayRate, hoursWorked, grossPay, totalGrossPay;
-string continueProgram="y";
-int counter;
+double grossPay;
 double getHours(double hoursWorked);
 double getGrossPay(double hourlyPayRate, double hoursWorked);
 int main()
 {
+	string firstName, lastName;
+	double hourlyPayRate, hoursWorked = 0.0, totalGrossPay = 0.0;
+	string continueProgram = "y";
+	int counter = 0;
 	cout << setprecision(2) << fixed;
 	ofstream outputFile;
 	outputFile.open("payroll.txt");
